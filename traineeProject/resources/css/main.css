@@ -28,6 +28,21 @@ html{
     box-sizing: border-box;    
 }
 
+/***********EMBEDED FONTS**************/
+@font-face{
+    font-family: '28_days';
+    src: url(/vendors/fonts/28_days_later-webfont.eot);
+    src: url(/vendors/fonts/28_days_later-webfont.woff2)
+    format('woff2'),
+         url(/vendors/fonts/28_days_later-webfont.woff)
+        format('woff'),
+         url(/vendors/fonts/28_days_later.ttf)
+         format('truetype'),
+        url(/vendors/fonts/28_days_later-webfont.svg)
+        format('svg');
+        font-weight:normal;
+        font-style: normal;
+}
 
 /****sets the images and videos to be 100% of their containers******/
 img,video{
@@ -89,12 +104,12 @@ a{
 /*******this is for &#9776;*********/
 #navBtn{
 /*    display: block;*/
-    font-size: 2.5em;
+    font-size: 2.4em;
     width:20%;
     background-color: rgb(23, 10, 46);
     text-align: center;
     margin:0 5vw 0 75vw;
-    padding: 7px 5px;
+    padding: 1px 20px;
 }
 
 .menu-items{
@@ -132,10 +147,12 @@ nav li a{
 */
 
 .slogan{
-    font-family:sans-serif;
+    font-family:'28_days';
     color:rgb(255, 255, 255);
-    text-align: right;
+    text-align: center;
+    margin: 0 0 0 240px;
     padding: 150px 5vw 0 0;
+    font-size:2.5em;
 }
 
 .mainHeading{
@@ -226,6 +243,221 @@ figcaption{
     margin: 0 auto;
 }
 
-.pdt article button{
-    color:red;
+#allProducts article button{
+    display:block;
+    padding:15px 20px;
+    border-radius: 5px 5px;
+    background-color: rgb(53, 38, 80);
+    border:1px solid rgb(255, 255, 255);
+    margin:10px 15vw 10px auto;
 }
+
+#allProducts article button a{
+    color: rgb(255,255,255);
+    font-family: arial,sans-serif;
+}
+
+article{
+/*
+    text-align: center;
+    width:230px;
+*/
+    margin: 0 15%;
+}
+
+/************Product Section Ends *********/
+
+/************Contact Section *************/
+
+.contactPage{
+/*    background-image:url(/resources/img/trainerContactBackground.jpg);*/
+    background: linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.72)),url(/resources/img/trainerContactBackground.jpg);
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+    margin: 15px 0 0 0;
+}
+
+/*
+.info{
+    padding: 60px;
+    margin-right: 40px;
+}
+
+.info .msg{
+    display: block;
+    text-align: center;
+    width:300px;
+    margin-right:10px;
+    padding-right: 40px;
+}
+*/
+
+div.contactHeading{
+    padding-top: 60px;
+    padding-right: 50px;
+    color:rgb(255, 255, 255);    
+}
+
+.contactMsg{
+    color:rgb(255, 255, 255); 
+    text-align: center;
+}
+.contanctBtn{
+    display: block;
+    border-radius: 5px 5px;
+    background-color: rgb(53, 38, 80);
+    border:1px solid rgb(53, 38, 80);
+    color:rgb(255, 255, 255);
+    padding:15px 40px;
+    margin:10px 32vw 10px auto;
+}
+.contactEmail{
+    display: block;
+    border-radius: 5px 5px;
+    background-color: rgb(53, 38, 80);
+    border:1px solid rgb(53, 38, 80);
+    color:rgb(200, 177, 250);
+    padding:5px 20px;
+    margin:10px 40vw 10px auto;
+}
+
+.contactEmail a{
+    color:rgb(255, 255, 255);
+}
+
+.office{
+    padding-left: 70px;
+    margin: 10px 0 0 60px;
+    color: rgb(255, 255, 255)
+}
+.addressDiv{
+    display:block;
+    padding-top: 10px;
+    margin-right: 20px;
+    color:rgb(255, 255, 255);
+    font-size: 1em;
+    text-align: center;
+}
+
+.addressDiv address {
+   line-height: 2;
+}
+
+/************Contact Section End**********/
+
+/*****************************
+Mobile Styles 568PX - Resolution *************
+        *************************************************/
+
+@media screen and (min-width:568px){
+.slogan{    
+    padding: 150px 50vw 0 0;
+    margin: 0 0 0 350px;
+    font-size:2.5em;
+}
+
+.mainHeading{    
+    margin: 30vh auto 0 auto;
+}
+
+.newArrivals{
+    padding:15px 20px;
+    margin: 10px 200px 0 auto;    
+}
+
+.fa-shopping-basket{
+    font-size: 2em;
+}
+    
+    
+    /***for product**/
+
+
+    figure{
+        margin: 0;
+    }   
+
+    figcaption{
+        display: block;
+        text-align: center;
+        font-size: 0.8em; 
+        margin: 0 auto;
+
+    }
+    
+     #allProducts  strong{
+        display: block;
+    }
+
+    #allProducts article button{
+        display:block;
+        padding:15px 20px;
+        border-radius: 5px 5px;
+        background-color: rgb(53, 38, 80);
+        border:1px solid rgb(255, 255, 255);
+        margin:10px 25vw 10px auto;
+    }
+
+    #allProducts article button a{
+        color: rgb(255,255,255);
+        font-family: arial,sans-serif;
+    }
+
+    article{
+    /*
+        text-align: center;
+        width:230px;
+    */
+        margin: 0 15%;
+    }
+    
+    /*********product ends***/
+
+}
+
+
+/*****-----------------------------
+TABLET STYLES 768PX - Resolution
+           ----------------------- *******/
+
+@media screen and (min-width:768PX){
+    
+    .homeBgImage{    
+        width:100%;       
+        height:50vh;/**vh view height**/
+    }
+    
+    #navBtn{
+/*    display: block;*/        
+        margin:0 5vw 0 75vw;
+        padding: 1px 20px;
+    }
+
+    .slogan{
+        margin: 0 0 0 600px;
+        padding: 150px 20vw 0 0;
+        font-size:2.5em;
+        text-align: center;
+    }
+    
+    .mainHeading{        
+        margin: 10vh auto 0 500px;
+    }
+    
+    .newArrivals{    
+        padding:15px 20px;
+        margin: 10px 70px 0 auto;    
+    }
+
+
+
+}
+
+
+/***-------------------------------
+DEKTOP STYLES 1024-Resolution
+                    ___________________***/

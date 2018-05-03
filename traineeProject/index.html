@@ -24,6 +24,9 @@
     <link rel="stylesheet"  
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     
+    <!--- font css for custom font css--->
+    <link rel="stylesheet" type="text/css" href="vendors/css/font.css"/>
+    
     <!-----Normalize CSS resets for browser compatibility ---->
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css"/>
     
@@ -80,20 +83,17 @@
     <section>
         <h1>PRODUCTS</h1>
         <p class="caption">All the best and unique trainers collection at exclusive PRICES!</p>
-        <div class="pdt">
+        <div id="allProducts">
         
         <article class="pContent">
             <figure>
                 <img src="resources/featuredProducts/blackpuma.jpg" alt="Puma Suede Classic Trainers In Black"/>
                 <figcaption>
-                    <span>
                         Puma Suede Classic Trainers In Black
                     <strong>£62.00</strong>
-                    </span>
-                    
                 </figcaption>
             </figure>
-            <button>Add To Cart</button>
+            <button><a>Add To Cart</a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
 
         <article>
@@ -105,7 +105,7 @@
                     <strong>80</strong>
                 </figcaption>
             </figure>
-            <button>Add To Cart</button>
+            <button><a>Add To Cart</a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
         
         <article>
@@ -117,7 +117,7 @@
                     <strong>£70.0</strong>
                 </figcaption>
             </figure>
-            <button>Add To Cart</button>
+            <button><a>Add To Cart</a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
          <article>
             <figure>
@@ -128,7 +128,7 @@
                     <strong>£77.00</strong>
                 </figcaption>
             </figure>
-            <button>Add To Cart</button>
+             <button><a>Add To Cart</a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
        
          <article>
@@ -140,7 +140,7 @@
                     <strong>£27.99</strong>
                 </figcaption>
             </figure>
-            <button>Add To Cart</button>
+             <button><a>Add To Cart</a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
         
         <article>
@@ -152,7 +152,7 @@
                     <strong>£50.00</strong>
                 </figcaption>
             </figure>
-            <button>Add To Cart</button>
+            <button><a>Add To Cart</a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
          <article>
             <figure>
@@ -163,12 +163,53 @@
                     <strong>£50.00</strong>
                 </figcaption>
             </figure>
-            <button>Add To Cart</button>
+             <button><a>Add To Cart</a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
-            </div>
+        </div>
     </section>
         
     <!--------Product section end-------------------------------->
+    
+     <!----- Contact Page Starts---------------------------------->
+    <section class="contactPage">
+        <div class="contactHeading">
+            <h1 >CONTACT</h1>
+        </div>
+        
+        <p class="contactMsg">Get in touch with us via our contact form,email or phone number</p>
+        <div >
+            <input class="contanctBtn" type="button" value="0208 488 3444"><br/>
+        </div>
+        
+        <button class="contactEmail"><a href="">Email Us</a></button>
+         <strong class="office">Main Office</strong>
+        <div class="addressDiv">
+            <address class="addBlock">
+                <i>Lumiere</i><br/>
+                <i>2nd Floor</i><br/>
+                <i class="area">St. Clare House</i><br/>
+                <i class="city">London EC3n 1DD</i><br/>
+            </address>
+        </div>
+
+
+<!--
+        <div class="info">
+            <h1 >CONTACT</h1>
+            <span class="msg"><p>Get in touch with us via our contact form,email or phone number</p></span>
+             <input type="button" value="0208 488 3444"><br/>
+            <button><a href="">Email Us</a></button>
+             <strong>Main Office</strong>
+            <address>
+                <i>Lumiere</i><br/>
+                <i>2nd Floor</i><br/>
+                <i>St. Clare House</i><br/>
+                <i>London EC3n 1DD</i><br/>
+            </address>
+        </div>
+-->
+    </section>
+    <!-----Contact Page ends------------------------------------->
     
     <!------- About Page starts---------------------------------->
     
@@ -182,20 +223,6 @@
     </p>
     <!-------About Page ends------------------------------------->
     
-    <!----- Contact Page Starts---------------------------------->
-    <section>
-        <h1>CONTACT</h1>
-        <p>Get in touch with us via our contact form,email or phone number</p>
-        <input type="button" value="0208 488 3444"><br/>
-        <nav><a href="">Email Us</a></nav><br/>
-        <strong>Main Office</strong>
-        <address>
-            <i>Lumiere</i><br/>
-            <i>2nd Floor</i><br/>
-            <i>St. Clare House</i><br/>
-            <i>London EC3n 1DD</i><br/>
-        </address>
-    </section>
-    <!-----Contact Page ends------------------------------------->
+   
 </body>
 </html>
