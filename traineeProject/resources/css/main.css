@@ -62,6 +62,10 @@ a{
 }
 
 /*--------HOME SECTION--------------*/
+.myVideo{
+    display: none;
+}
+
 .homeBgImage{
     position: relative;
     background-image:url(/resources/img/trainerHomePage.jpg);
@@ -70,7 +74,7 @@ a{
     background-size: cover;
     background-attachment: fixed;
     width:100%;
-    height:auto;
+/*    height:auto;*/
     height:100vh;/**vh view height**/
 }
 
@@ -241,28 +245,37 @@ figure{
 figcaption{
     font-size: 0.8em; 
     margin: 0 auto;
+    text-align: center;
 }
 
-#allProducts article button{
+.allProducts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.allProducts article button{
     display:block;
     padding:15px 20px;
     border-radius: 5px 5px;
     background-color: rgb(53, 38, 80);
     border:1px solid rgb(255, 255, 255);
-    margin:10px 15vw 10px auto;
+    margin:2vh auto 15vh auto;
 }
 
-#allProducts article button a{
+.allProducts article button a{
     color: rgb(255,255,255);
     font-family: arial,sans-serif;
 }
 
+
+
 article{
-/*
+    margin: 1%;
     text-align: center;
-    width:230px;
-*/
-    margin: 0 15%;
+    width:230px;    
 }
 
 /************Product Section Ends *********/
@@ -276,7 +289,7 @@ article{
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
-    height: 70vh;
+    height: 100vh;
     position: relative;
     margin: 15px 0 0 0;
 }
@@ -347,6 +360,10 @@ div.contactHeading{
    line-height: 2;
 }
 
+#map{
+    height:450px;
+    width:100%;
+}
 /************Contact Section End**********/
 
 /*****************************
@@ -389,6 +406,7 @@ Mobile Styles 568PX - Resolution *************
 
     }
     
+/*
      #allProducts  strong{
         display: block;
     }
@@ -406,14 +424,17 @@ Mobile Styles 568PX - Resolution *************
         color: rgb(255,255,255);
         font-family: arial,sans-serif;
     }
+*/
 
+/*
     article{
-    /*
+    
         text-align: center;
         width:230px;
-    */
+    
         margin: 0 15%;
     }
+*/
     
     /*********product ends***/
 
@@ -427,8 +448,8 @@ TABLET STYLES 768PX - Resolution
 @media screen and (min-width:768PX){
     
     .homeBgImage{    
-        width:100%;       
-        height:50vh;/**vh view height**/
+/*        width:100%;       */
+        height:90vh;/**vh view height**/
     }
     
     #navBtn{
@@ -452,7 +473,10 @@ TABLET STYLES 768PX - Resolution
         padding:15px 20px;
         margin: 10px 70px 0 auto;    
     }
-
+    
+    .allProducts article button{
+        margin-bottom: 0;
+    }
 
 
 }
@@ -461,3 +485,81 @@ TABLET STYLES 768PX - Resolution
 /***-------------------------------
 DEKTOP STYLES 1024-Resolution
                     ___________________***/
+
+
+@media screen and (min-width:1024px){
+    
+    .myVideo{
+        display: inline-block;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1000;
+        width: 100%;
+        height: auto;
+    }
+    
+    .homeBgImage {
+      background-image: none;
+        overflow-y: hidden;
+      background: -webkit-linear-gradient(rgba(0,0,0,48),rgba(0, 0, 0, 0.53));
+    }
+    
+    .slogan{
+        padding-top: 50vh;
+        padding-left: 65vh;
+    }
+    
+    #navBtn, .basketIcon{
+        display:none;
+    }
+    
+    .menu-items{
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 8px;
+    }
+    
+    .logoC{
+        top: 60px;
+        left: 50px;
+        width:100px;        
+    }
+    
+    /*****navigation*****/
+    .navC{
+         text-align: right;
+        border-bottom: none;
+    }
+    
+    nav li a{
+        border-top: none;
+        font-size: 0.6em;
+        letter-spacing: 1px;
+    }
+    
+    nav a:hover{
+        color:rgb(200, 177, 250);        
+    }
+    
+     .menu-items li { /****why not using .navC?????**/
+        display: inline;
+         padding-left: 78px;    
+         padding-right: 10px;
+    }
+    
+    .newArrivals{       
+        margin:0 0 0 60px;
+        
+    }
+    
+    .mainHeading{
+        text-align: left;        
+        margin:5px 0 0 40px;
+    }
+    
+    .allProducts{
+        column-count: 4;
+    }
+}

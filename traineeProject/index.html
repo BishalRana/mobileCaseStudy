@@ -24,6 +24,7 @@
     <link rel="stylesheet"  
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     
+    
     <!--- font css for custom font css--->
     <link rel="stylesheet" type="text/css" href="vendors/css/font.css"/>
     
@@ -38,6 +39,11 @@
     <!---------------------------Home Page section- ------------>
     <section class="homeBgImage">
         <header class="headerC">
+            
+            <video class="myVideo" autoplay muted loop>
+                <source src="resources/video/homeVideo.mp4" type="video/mp4"/>
+                Your browser does not support this video (HTML VIDEO TAG)
+            </video>
             
             <div class="logoC">
                  <img  src="resources/img/logo.png" alt="The company logo"/>
@@ -59,6 +65,7 @@
                         <li><a>Products</a></li>
                         <li><a>Sales</a></li>
                         <li><a>About</a></li>
+                        <li><a>Contact</a></li>
                         <li><a>View cart</a></li>
                     </ul>
                 </nav>
@@ -83,7 +90,7 @@
     <section>
         <h1>PRODUCTS</h1>
         <p class="caption">All the best and unique trainers collection at exclusive PRICES!</p>
-        <div id="allProducts">
+        <div class="allProducts">
         
         <article class="pContent">
             <figure>
@@ -168,7 +175,19 @@
         </div>
     </section>
         
-    <!--------Product section end-------------------------------->
+    <!--------Product section end-------------------------------->    
+    
+    <!------- About Page starts---------------------------------->
+    
+    <h1>ABOUT</h1>
+    <p>A brief description of our company and all the services we offer.</p>
+    <video src="resources/video/trainers.mp4" controls width="300" title="A brief description of our company and all the services we offer." >
+    
+    </video>
+    <p>
+        At lumiere we provide superior customer service, with a commitment to deliver distinctive products of the highest quality.Our trainers and promotional items communicate a classic,retro influence.Keeping a watchful eye on trends and styles,our in-house graphic designers work to create a unique company,group or team identity-one that sets you apart from the rest.
+    </p>
+    <!-------About Page ends------------------------------------->
     
      <!----- Contact Page Starts---------------------------------->
     <section class="contactPage">
@@ -193,36 +212,31 @@
         </div>
 
 
-<!--
-        <div class="info">
-            <h1 >CONTACT</h1>
-            <span class="msg"><p>Get in touch with us via our contact form,email or phone number</p></span>
-             <input type="button" value="0208 488 3444"><br/>
-            <button><a href="">Email Us</a></button>
-             <strong>Main Office</strong>
-            <address>
-                <i>Lumiere</i><br/>
-                <i>2nd Floor</i><br/>
-                <i>St. Clare House</i><br/>
-                <i>London EC3n 1DD</i><br/>
-            </address>
+        <div >
+        
         </div>
--->
+        
     </section>
     <!-----Contact Page ends------------------------------------->
     
-    <!------- About Page starts---------------------------------->
+    <div id="map">
+        The map goes here.....
+    </div>
     
-    <h1>ABOUT</h1>
-    <p>A brief description of our company and all the services we offer.</p>
-    <video src="resources/video/trainers.mp4" controls width="300" title="A brief description of our company and all the services we offer." >
+    <!-- google maps api-->
+    <script src="http://maps.google.com/maps/api/js"></script>
     
-    </video>
-    <p>
-        At lumiere we provide superior customer service, with a commitment to deliver distinctive products of the highest quality.Our trainers and promotional items communicate a classic,retro influence.Keeping a watchful eye on trends and styles,our in-house graphic designers work to create a unique company,group or team identity-one that sets you apart from the rest.
-    </p>
-    <!-------About Page ends------------------------------------->
+    <!-- js external links--->
+       <!-- JQUERY CDN--->
+     
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+   
+    <!--- gmaps --->
+    <script src="vendors/script/gmaps.js"></script>
+    <!-- myScript.js -->
+    <script src="resources/script/myScript.js"></script>
     
    
-</body>
+    </body>
 </html>
