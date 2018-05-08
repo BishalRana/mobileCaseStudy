@@ -490,7 +490,7 @@ DEKTOP STYLES 1024-Resolution
 @media screen and (min-width:1024px){
     
     .myVideo{
-        display: inline-block;
+        display:inline-block;
         background-size: cover;
         position: absolute;
         top: 0;
